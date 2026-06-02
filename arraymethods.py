@@ -1,0 +1,18 @@
+r=int(input("Enter the number of elements in the array: "))
+a=list(map(int,input("Enter the elements of the array: ").split()))
+print("Array traversal of position:")
+for i in range(r):
+    print(i)
+print("Array traversal of elements:")
+for i in range(r):
+    print(a[i])
+a.append(int(input("Enter the element to be appended: ")))
+print("The array after appending is:", a)
+a.insert(int(input("Enter the position to insert the element: ")), int(input("Enter the element to be inserted: ")))
+print("The array after inserting is:", a)
+a.pop(int(input("Enter the position to pop the element: ")))
+print("The array after popping is:", a)
+a.remove(int(input("Enter the element to be removed: ")))
+print("The array after removing is:", a)
+a.sort(reverse=True)
+print("The array after sorting in descending order is:", a)
